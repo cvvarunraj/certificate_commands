@@ -7,3 +7,6 @@ notAfter=Jan 20 00:02:06 2019 GMT
 
 ref: https://pingtool.org/openssl-check-p12-expiration-date/
 
+Change password of certificate .pfx file
+>> File > Open .pfx file in keystore explorer (or similar application) entering existing password.
+>> Tools > set keystore password (enter new password). Close application saving changes.
