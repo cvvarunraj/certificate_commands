@@ -1,0 +1,9 @@
+## getting expiry date of a .pfx file
+openssl pkcs12 -in testuser1.pfx -nokeys | openssl x509 -noout -enddate
+[protected]$ openssl pkcs12 -in resourceservice-corp.ca.bestbuy.com.pfx -nokeys | openssl x509 -noout -enddate
+Enter Import Password:
+MAC verified OK
+notAfter=Jan 20 00:02:06 2019 GMT
+
+ref: https://pingtool.org/openssl-check-p12-expiration-date/
+
