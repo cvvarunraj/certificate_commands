@@ -17,6 +17,9 @@ openssl pkcs12 -export -out test03-bbyca-resourceservice-wip.ca.bestbuy.com.pfx 
 Enter Export Password:
 Verifying - Enter Export Password:
 
+#### https://blog.spaps.de/add-password-to-p12-pfx-certificate/
+#### https://community.digicert.com/en/forums.topic.html/change-password-for-pfx-file.html
+
 Change password of certificate .pfx file __NOT THE BEST WAY
 >> File > Open .pfx file in keystore explorer (or similar application) entering existing password.
 >> Tools > set keystore password (enter new password). Close application saving changes.
