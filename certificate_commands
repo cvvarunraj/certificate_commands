@@ -7,6 +7,16 @@ notAfter=Jan 20 00:02:06 2019 GMT
 
 ref: https://pingtool.org/openssl-check-p12-expiration-date/
 
-Change password of certificate .pfx file
+Give password of orig .pfx file
+
+openssl pkcs12 -in test03-bbyca-resourceservice-wip.ca.bestbuy.com.pfx -out test03-bbyca-resourceservice-wip.ca.bestbuy.com.pem -nodes
+Enter Import Password:
+Mac verify error: invalid password?
+
+openssl pkcs12 -export -out test03-bbyca-resourceservice-wip.ca.bestbuy.com.pfx -in test03-bbyca-resourceservice-wip.ca.bestbuy.com.pem
+Enter Export Password:
+Verifying - Enter Export Password:
+
+Change password of certificate .pfx file __NOT THE BEST WAY
 >> File > Open .pfx file in keystore explorer (or similar application) entering existing password.
 >> Tools > set keystore password (enter new password). Close application saving changes.
