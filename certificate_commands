@@ -23,3 +23,8 @@ Verifying - Enter Export Password:
 Change password of certificate .pfx file __NOT THE BEST WAY
 >> File > Open .pfx file in keystore explorer (or similar application) entering existing password.
 >> Tools > set keystore password (enter new password). Close application saving changes.
+
+Check for port connectivity without telnet and nc
+timeout 5 bash -c 'cat < /dev/null > /dev/tcp/plocdb52.ca.bestbuy.com/50000'; echo $?
+
+https://jansipke.nl/test-tcp-connection-without-telnet-nc/?unapproved=177937&moderation-hash=34968b0e5708fb4f71cf3c6eb556d5e4#comment-177937
