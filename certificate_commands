@@ -1,5 +1,6 @@
 ## getting expiry date of a .pfx file
 openssl pkcs12 -in testuser1.pfx -nokeys | openssl x509 -noout -enddate
+openssl x509 -enddate -noout -in file.crt/pem
 [protected]$ openssl pkcs12 -in resourceservice-corp.ca.bestbuy.com.pfx -nokeys | openssl x509 -noout -enddate
 Enter Import Password:
 MAC verified OK
