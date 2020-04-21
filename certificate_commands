@@ -29,3 +29,5 @@ Check for port connectivity without telnet and nc
 timeout 5 bash -c 'cat < /dev/null > /dev/tcp/plocdb52.ca.bestbuy.com/50000'; echo $?
 
 https://jansipke.nl/test-tcp-connection-without-telnet-nc/?unapproved=177937&moderation-hash=34968b0e5708fb4f71cf3c6eb556d5e4#comment-177937
+
+net group /domain TheGroupName -  ad groups you are part of
